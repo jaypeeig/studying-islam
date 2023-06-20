@@ -1,20 +1,96 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-body {
-	font-family: Verdana, sans-serif;
+/* Register the Ubuntu-Bold font */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Register the Ubuntu-BoldItalic font */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Register the Ubuntu-Italic font */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Register the Ubuntu-Light font */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-Light.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Register the Ubuntu-LightItalic font */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-LightItalic.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Register the Ubuntu-Medium font */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Register the Ubuntu-MediumItalic font */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-MediumItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Register the Ubuntu-Regular font */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+  font-family: 'DistantGalaxy';
+  src: url('/fonts/DistantGalaxy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html, body {
+	font-family: Ubuntu, sans-serif;
+	height: 100%;
 	margin: auto;
-	padding: 20px;
-	max-width: 65ch;
-	text-align: left;
+	padding: 0;
+	max-width: 100ch;
 	background-color: #fff;
 	word-wrap: break-word;
-	overflow-wrap: break-word;
-	line-height: 1.5;
-	color: #444;
+	overflow-wrap: break-word;	
 }
+
 h1,
 h2,
 h3,
