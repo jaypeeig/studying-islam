@@ -11,22 +11,12 @@ const { title, description, image } = Astro.props;
 		<BaseHead title={title || SITE_TITLE} description={description || SITE_DESCRIPTION} image={image || '/social.jpg'} />
 	</head>
   <body>
-    <div class="wrapper">
+    <main class="h-screen flex flex-col">
       <Header />
-      <main>
+      <section class="prose flex-grow">
         <slot /> <!-- your content is injected here -->
-      </main>
+      </section>
       <Footer/>
-    </div>
+    </main>
   </body>
 </html>
-<style>
- .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  main {
-    flex: 1;
-  }
-</style>
