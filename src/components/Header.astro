@@ -1,14 +1,9 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
 ---
 
-<header class="prose">
-	<h2>
-		{SITE_TITLE} : (Work in Progress)
-	</h2>
+<header class="flex flex-row-reverse">
 	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/blog">Blog</HeaderLink>
 		<HeaderLink href="/about">About</HeaderLink>
 	</nav>
