@@ -9,17 +9,13 @@ const posts = (await getCollection('blog')).sort(
 );
 
 import Layout from '../../layouts/BaseLayout.astro';
+import PageTitle from '../../components/PageTitle.astro';
 ---
 
 <Layout>
 	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	<div class="container mx-auto">
-		<section class="prose">
-			<a href="/" class="no-underline">
-				<h1 class="text-indigo-500">Studying Islam.</h1>
-			</a>
-			<h2 class="my-4">Blogs</h2>
-		</section>
+	<div class="container mx-auto px-4">
+		<PageTitle title="Articles" />
 		<main>
 			<section>
 				<ul>
