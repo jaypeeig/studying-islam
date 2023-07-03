@@ -20,9 +20,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<div class="container mx-auto px-4">
 			<Header />
 			<main>
-				<PageTitle title={title} />
-				<article class="prose">
-					{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
+				<article class="prose mx-auto">
+					<PageTitle />
+					{heroImage && <img width={720} height={360} src={heroImage} alt="" class="mb-3" />}
+					<h2 class="my-2">{title}</h2>
 					<FormattedDate date={pubDate} />
 					{
 						updatedDate && (

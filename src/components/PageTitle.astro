@@ -9,5 +9,5 @@ const { title } = Astro.props;
     <a href="/" class="no-underline">
         <h1 class="text-indigo-500">Studying Islam.</h1>
     </a>
-    <h2 class="my-4">{title}</h2>
+    {title && <h2 class="my-4">{title}</h2>}
 </section>
