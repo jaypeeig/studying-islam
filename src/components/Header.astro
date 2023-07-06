@@ -2,10 +2,12 @@
 import HeaderLink from './HeaderLink.astro';
 ---
 
-<header class="flex flex-row-reverse m-4">
-	<nav>
-		<HeaderLink href="/articles">Articles</HeaderLink>
-		<HeaderLink href="#">FAQs</HeaderLink>
-		<HeaderLink href="#">[i18n]</HeaderLink>
-	</nav>
+<header class="flex flex-row-reverse bg-gray-900">
+	<div class="m-3">
+		<nav class="text-slate-300">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/articles">Articles</HeaderLink>
+			<HeaderLink href="#">[i18n]</HeaderLink>
+		</nav>
+	</div>
 </header>
