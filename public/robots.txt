@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://learningislam.uk/sitemap-index.xml
