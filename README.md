@@ -1,6 +1,6 @@
-# Astro Learning Project: Studying Islam
+# Astro Learning Project: Learning Islam
 
-[Website](https://studying-islam.pages.dev/)
+[Website](https://learningislam.uk/)
 
 Features:
 
