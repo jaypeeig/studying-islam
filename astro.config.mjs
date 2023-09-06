@@ -6,6 +6,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://studying-islam.pages.dev',
+  site: 'https://learningislam.uk',
   integrations: [mdx(), sitemap(), tailwind()]
 });
